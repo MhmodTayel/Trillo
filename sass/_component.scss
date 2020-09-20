@@ -115,10 +115,20 @@
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+  @media only screen and (max-width: 56.25em) /* 900px */ {
+    display: flex;
+    margin: 0;
+  }
   &__item {
     position: relative;
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+      @media only screen and (max-width: 56.25em) /* 900px */ {
+        margin: 0;
+      }
+    }
+    @media only screen and (max-width: 56.25em) /* 900px */ {
+      flex: 1;
     }
   }
 
@@ -155,6 +165,11 @@
     padding: 1.5rem 3rem;
     position: relative;
     z-index: 10;
+
+    @media only screen and (max-width: 56.25em) /* 900px */ {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
   &__icon {
     width: 1.75rem;
@@ -172,6 +187,9 @@
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-light-4);
+  @media only screen and (max-width: 56.25em) /* 900px */ {
+    display: none;
+  }
 }
 
 /////////////////////////////////
@@ -191,7 +209,10 @@
   display: flex;
   border-bottom: 1px solid var(--color-grey-light-2);
   align-items: center;
-
+  @media only screen and (max-width: 56.25em) /* 900px */ {
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
   &__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -344,6 +365,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -352,7 +377,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -420,7 +445,9 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
-
+  @media only screen and (max-width: 56.25em) /* 900px */ {
+    padding: 2.5rem 0;
+  }
   &__book-now {
     text-transform: uppercase;
     font-size: 2rem;
