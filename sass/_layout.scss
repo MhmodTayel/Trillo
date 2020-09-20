@@ -55,6 +55,7 @@
 
   @media only screen and (max-width: 37.5em) /* 900px */ {
     flex-direction: column;
+    padding-bottom: 0;
   }
 }
 
@@ -82,7 +83,7 @@
 
   @media only screen and (max-width: 37.5em) /* 900px */ {
     margin-top: 5rem;
-    width: 50%;
+    width: 90%;
     align-items: center;
     margin: 2rem auto;
   }

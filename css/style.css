@@ -102,7 +102,8 @@ body {
       padding: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .detail {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding-bottom: 0; } }
 
 .description {
   background-color: #fff;
@@ -126,7 +127,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .user-reviews {
       margin-top: 5rem;
-      width: 50%;
+      width: 90%;
       align-items: center;
       margin: 2rem auto; } }
 
@@ -282,12 +283,20 @@ body {
     .overview {
       margin-bottom: 3rem;
       padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .overview {
+      flex-wrap: wrap; } }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 0.8rem 1rem;
+        margin-right: auto; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -299,8 +308,15 @@ body {
     font-size: 1.2rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__location {
+        margin-right: auto; } }
   .overview__icon-location {
     margin-right: 0.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__icon-location {
+        width: 3rem;
+        height: 3rem; } }
   .overview__rating {
     background-color: var(--color-primary);
     margin-left: 3rem;
@@ -311,6 +327,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        margin-right: auto; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300; }
@@ -363,6 +382,10 @@ body {
   border-bottom: 1px solid var(--color-grey-light-2);
   display: flex;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 37.5em) {
+    .list {
+      flex-wrap: nowrap;
+      flex-direction: column; } }
   .list__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem; }
@@ -450,6 +473,10 @@ body {
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .cta__book-now {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem; } }
 
 .btn {
   font-size: 1.5rem;
@@ -466,6 +493,9 @@ body {
     display: inline-block;
     padding: 2rem 7.5rem;
     transition: all 0.2s; }
+    @media only screen and (max-width: 37.5em) {
+      .btn__visible {
+        padding: 1.7rem 5rem; } }
   .btn__invisible {
     display: inline-block;
     position: absolute;
